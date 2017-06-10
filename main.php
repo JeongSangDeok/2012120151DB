@@ -8,15 +8,15 @@
 <body>
 <div style = "text-align:right;padding-top:5px;padding-right:5px">
 
-<a href="UserRequire.html"> 건의사항 </a>  
+<a href="UserRequire.php"> 건의사항 </a>  
 &nbsp;
-<a href="BookRequire.html"> 구입요청 </a> 
+<a href="BookRequire.php"> 구입요청 </a> 
 &nbsp;
-<a href = "BookReserve.html"> 예약대출 </a>
+<a href = "BookReserve.php"> 예약대출 </a>
 &nbsp;
-<a href = "List.html"> @BookList </a> 
+<a href = "List.php"> @BookList </a> 
 &nbsp;
-<a href="User_info.html"> @User_info </a> 
+<a href="User_info.php"> @User_info </a> 
 &nbsp;
 
 </div>
@@ -27,11 +27,11 @@
 	<br>
 	<br>
   </div>
-  <form>
+  <form action = "sql_searchbook.php">
   <fieldset>
     <legend>통합 검색</legend>
 	<div style = "text-align:center">
-    <label for = "bookname">도서명</label> : <input type = "text" id="bookname" name ="textt" size="25"/>
+    <label for = "Bookname">도서명</label> : <input type = "text" id="bookname" name ="textt" size="25"/>
 	  <input type = "submit" value = "검색" />
       <input type = "reset" value="지우기"/>
 	<br>

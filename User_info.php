@@ -2,16 +2,16 @@
 <html>
 <head>
  <meta charset="utf-8">
-<title>REGISTER</title>
+<title>USER INFO</title>
 </head>
 <body>
-
-  <form method="post" action="sql_register.php">
+ 
+  <form action="sql_userinfo.php">
   <fieldset>
-    <legend>회원가입</legend>
+    <legend>회원가입 정보수정</legend>
   ID : <input type="text" name="Userid" size="25" placeholder="ID입력"/> 
   <br>
-  PW : <input type ="password" size ="25" name ="Userpw" /> <br>
+  PW : <input type ="Userpw" size ="25" name ="pwd" /> <br>
   <br>
   성명 : <input type="text" name="Username" size = "25" />
   <br>
@@ -35,13 +35,13 @@
     <textarea name="Useretc" cols="40" rows="10">기타 상세 정보</textarea>
    <br>
    <hr>
-   <input type ="submit" value="신청" onclick="alert('신청되었습니다.')"/>
+   <input type ="submit" value="수정" onclick="alert('수정되었습니다.')"/>
    <input type ="reset" value="취소" />
   <br> 
   </fieldset>
   
   <br>
-  <a href = "Init.php">뒤로 가기(BACK)</a>
+  <a href = "main.php">뒤로 가기(BACK)</a>
 	
   </form>
  

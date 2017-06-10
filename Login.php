@@ -13,17 +13,17 @@
 	<br>
   </div>
   
-  <form>
+  <form action="sql_login.php">
  <div style="text-align:center">   
 	 ID :	 
-	 <input type="text" name="id" size="25" placeholder="ID입력"/> 
+	 <input type="text" name="Userid" size="25" placeholder="ID입력"/> 
      <br>
-     PW : <input type ="password" size ="25" name ="pwd" /> <br>
+     PW : <input type ="Userpw" size ="25" name ="pwd" /> <br>
      <br>
 	 <input type = "submit" value = "LOGIN" />
 	 <br>
 	 <br>
-	 <a href = "main.html">뒤로 가기(BACK)</a>
+	 <a href = "main.php">뒤로 가기(BACK)</a>
 	
  </div>
   </form>

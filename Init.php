@@ -6,47 +6,28 @@
 </head>
 
 <body>
+  
+
 <?php
-//echo 'Hello!!';
-$servername = getenv('localhost');
-$username = getenv('C9_USER');
-$password = "";
-$database = "c9";
-$dbport = 3306;
-
-//Create connection
-$db = new mysqli($servername, $username, $password, $database, $dbport);
-
-//Check connection
-if($db->connect_error)
-{
-    die("connection failed: " . $db->connect_error);
-}
-echo "Connected successfully (".$db->host_info.")";
-$sql = "INSERT INTO dep (dept_no, dept_name)
-VALUES (1, 'data1')";
-
-if ($db->query($sql) === true){
-    echo "New record created successfully";
-}else{
-    echo "error : " . $sql . "<br>". $db->error;
-}
+include "sql_connect.php";
+include "sql_createtable.php";
 $db->close();
 ?>
+
     
 <div style = "text-align:right;padding-top:5px;padding-right:5px">
 
-<a href="Denied.html"> 건의사항 </a>  
+<a href="Denied.php"> 건의사항 </a>  
 &nbsp;
-<a href="Denied.html"> 구입요청 </a> 
+<a href="Denied.php"> 구입요청 </a> 
 &nbsp;
-<a href = "Denied.html"> 예약대출 </a>
+<a href = "Denied.php"> 예약대출 </a>
 &nbsp;
-<a href = "Denied.html"> @BookList </a> 
+<a href = "Denied.php"> @BookList </a> 
 &nbsp;
-<a href="Login.html"> @Login </a> 
+<a href="Login.php"> @Login </a> 
 &nbsp;
-<a href = "Register.html"> @Register </a> 
+<a href = "Register.php"> @Register </a> 
 &nbsp;
 
 </div>

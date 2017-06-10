@@ -17,7 +17,7 @@
  <div style="text-align:center">   
 	 <h1>로그인을 먼저 해주세요</h1>	
 	 <br>
-	 <a href = "Init.html">뒤로 가기(BACK)</a>
+	 <a href = "Init.php">뒤로 가기(BACK)</a>
 	
  </div>
   </form>
