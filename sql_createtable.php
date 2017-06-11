@@ -79,37 +79,37 @@ $sql6 ="CREATE TABLE User_cookie
 if ($db->query($sql0) === true){
     echo "New record created successfully";
 }else{
-    echo "error : " . $sql0 . "<br>". $db->error;
+    //echo "error : " . $sql0 . "<br>". $db->error;
 }
 if ($db->query($sql1) === true){
     echo "New record created successfully";
 }else{
-    echo "error : " . $sql1 . "<br>". $db->error;
+    //echo "error : " . $sql1 . "<br>". $db->error;
 }
 if ($db->query($sql2) === true){
     echo "New record created successfully";
 }else{
-    echo "error : " . $sql2 . "<br>". $db->error;
+    //echo "error : " . $sql2 . "<br>". $db->error;
 }
 if ($db->query($sql3) === true){
     echo "New record created successfully";
 }else{
-    echo "error : " . $sql3 . "<br>". $db->error;
+    //echo "error : " . $sql3 . "<br>". $db->error;
 }
 if ($db->query($sql4) === true){
     echo "New record created successfully";
 }else{
-    echo "error : " . $sql4 . "<br>". $db->error;
+   // echo "error : " . $sql4 . "<br>". $db->error;
 }
 if ($db->query($sql5) === true){
     echo "New record created successfully";
 }else{
-    echo "error : " . $sql5 . "<br>". $db->error;
+    //echo "error : " . $sql5 . "<br>". $db->error;
 }
 
 if ($db->query($sql6) === true){
     echo "New record created successfully";
 }else{
-    echo "error : " . $sql6 . "<br>". $db->error;
+   // echo "error : " . $sql6 . "<br>". $db->error;
 }
 ?>

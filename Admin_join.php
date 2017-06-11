@@ -2,17 +2,17 @@
 <html>
   <head>
      <meta charset="utf-8">
-     <title>JOIN_LIST</title>
+     <title>USER_LIST</title>
   </head>
 
   <body>
  
     <form>
       <fieldset>
-        <legend>가입자 리스트</legend>
+        <legend>예약자 리스트</legend>
    <?php
    include "sql_connect.php";
-   include "sql_userlist.php";
+   include "sql_adminjoin.php";
    $db->close();
    ?>
        </fieldset>  <br>

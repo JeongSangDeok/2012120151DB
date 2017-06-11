@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- <meta charset="utf-8">
-<title>BOOK_LIST</title>
+   <meta charset="utf-8">
+   <title>BOOK_LIST</title>
 </head>
+
 <body>
  
-  <form>
-  <fieldset>
-    <legend>소장도서 목록</legend>
+   <form>
+      <fieldset>
+         <legend>소장도서 목록</legend>
    <?php
    include "sql_connect.php";
    include "sql_booklist.php";
    $db->close();
    ?>
-  </fieldset>
-  
+      </fieldset>
   <br>
   <a href = "main.php">뒤로 가기(BACK)</a>
 	

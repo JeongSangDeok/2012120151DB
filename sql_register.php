@@ -8,13 +8,17 @@
  $Userjob = $_POST['Userjob'];
  $Userinterest = $_POST['Userinterest'];
  $Useretc = $_POST['Useretc'];
+ $Isadmin = $_POST['Isadmin'];
  //'".$_POST['username']."'
    $sql = "insert into User(user_id, user_pw, user_name, user_gender, user_job, user_interest, user_etc, is_admin,is_cookie) ";
-   $sql .= "values('$Userid','$Userpw','$Username','$Usergender','$Userjob','$Userinterest','$Useretc', 0, 0); ";
+   $sql .= "values('$Userid','$Userpw','$Username','$Usergender','$Userjob','$Userinterest','$Useretc', '$Isadmin', 0); ";
    if ($db->query($sql) === true){
-    echo "New record created successfully";
+    echo "<H1>RESISTER SUCCESS</H1><br><br>";
+    echo "<a href = "init.php">뒤로 가기(BACK)</a>";
    }else{
+    echo "<H1>RESISTER FAIL</H1><br><br>description : <br>";
     echo "error : " . $sql . "<br>". $db->error;
+    echo "<a href = "init.php">뒤로 가기(BACK)</a>";
    }
    $db->close();
 ?>
