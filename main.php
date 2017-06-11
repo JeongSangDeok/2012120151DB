@@ -14,11 +14,29 @@
      <a href = "PrintBook.php"> @BookList </a> &nbsp;
      <a href="User_info.php"> @User_info </a> &nbsp;
    </div>
+   
+   <form  method = "post" action = "Searchbook.php">
    <div style = "text-align:center;padding-top:15px">
      <image src = "mark.png"></image> <br>
      <span style = "font-size:30px">KoreaUniv Library</span> <br> <br>
-   </div>
-   <form  method = "post" action = "Searchbook.php">
+      <?php
+      include "sql_connect.php";
+      $Userid = $_POST['Userid'];
+      $sql = "select * from User_cookie ";
+      $sql .= "where user_id = '$Userid'; ";
+      $res = $db->query($sql);
+      $row = $res->fetch_array(MYSQLI_ASSOC); 
+      echo '<span style = "font-size:12px"># 사용자 아이디 : <input type = "text" id="userid" name ="Userid" value ="'.$Userid.'" size = 5/></span><br>';
+      if ($row != null) { 
+      echo '<span style = "font-size:12px"># 최근검색(쿠키) : '.$row[lastest_search].'</span>';
+      } 
+      if($row == null){ 
+      echo '<span style = "font-size:12px"># 최근검색(쿠키) : 없음 </span>';
+      } 
+      $db->close(); 
+     ?>
+     </div>
+
      <fieldset>
        <legend>통합 검색</legend>
     	  <div style = "text-align:center">

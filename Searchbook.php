@@ -1,6 +1,19 @@
 <?php
    include "sql_connect.php";
    $Bookname = $_POST['Bookname'];
+   $Userid = $_POST['Userid'];
+   $sql_cookie = "insert into User_cookie(user_id,lastest_search) ";
+   $sql_cookie .= "values('$Userid', '$Bookname'); ";
+   $sql_update  = "update User_cookie ";
+   $sql_update .= "set lastest_search = '$Bookname' ";
+   $sql_update .= "where user_id = '$Userid'; ";
+   if ($db->query($sql_cookie) === true){
+    echo "<h3>Cookie_Success</h3><br>"; 
+   }else{
+       if ($db->query($sql_update) === true) echo "<h3>Cookie_Success</h3><br>"; 
+       else  echo "<h3>Cookie_FAILED</h3><br>";
+   }
+   //$db->close();
    $sql = "select * from Book ";
    $sql .= "where book_name = '$Bookname'";
       $res = $db->query($sql); 
