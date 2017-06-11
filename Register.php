@@ -6,7 +6,7 @@
 </head>
 <body>
 
-  <form method="post" action="sql_register.php">
+  <form method = "post" action="sql_register.php">
   <fieldset>
     <legend>회원가입</legend>
   ID : <input type="text" name="Userid" size="25" placeholder="ID입력"/> 

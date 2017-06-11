@@ -6,7 +6,7 @@
 </head>
 <body>
  
-  <form action = "sql_bookreserve.php">
+  <form method = "post" action = "sql_bookreserve.php">
   <fieldset>
     <legend>도서 예약 대출</legend>
   <br>

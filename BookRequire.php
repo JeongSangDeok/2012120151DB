@@ -6,7 +6,7 @@
 </head>
 <body>
  
-  <form action = "sql_bookrequire.php" onsubmit="return false" oninput="sum.value = parseInt(Bookprice.value) * parseInt(Booknum.value)">
+  <form method = "post" action = "sql_bookrequire.php" onsubmit="return false" oninput="sum.value = parseInt(Bookprice.value) * parseInt(Booknum.value)">
 
   <fieldset>
     <legend>도서 구입 요청</legend>

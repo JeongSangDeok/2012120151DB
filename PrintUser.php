@@ -11,13 +11,13 @@
     <legend>소장도서 목록</legend>
    <?php
    include "sql_connect.php";
-   include "sql_list.php";
+   include "sql_userlist.php";
    $db->close();
    ?>
   </fieldset>
   
   <br>
-  <a href = "main.php">뒤로 가기(BACK)</a>
+  <a href = "Admin_main.php">뒤로 가기(BACK)</a>
 	
   </form>
  

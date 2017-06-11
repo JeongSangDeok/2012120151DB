@@ -8,22 +8,17 @@
 <body>
 <div style = "text-align:right;padding-top:5px;padding-right:5px">
 
-<a href="UserRequire.php"> 건의사항 </a>  
+<a href="BookInsert.php"> 신규도서 입력 </a>  
 &nbsp;
-<a href="BookRequire.php"> 구입요청 </a> 
-&nbsp;
-<a href = "BookReserve.php"> 예약대출 </a>
-&nbsp;
-<a href = "PrintBook.php"> @BookList </a> 
-&nbsp;
-<a href="User_info.php"> @User_info </a> 
+<a href="PrintUser.php"> 사용자정보 출력 </a> 
 &nbsp;
 
 </div>
   <div style = "text-align:center;padding-top:15px">
     <image src = "mark.png"></image>
 	<br>
-    <span style = "font-size:30px">KoreaUniv Library</span>
+    <span style = "font-size:30px">KoreaUniv Library</span><br>
+    <span style = "font-size:20px">(관리자버전)</span>
 	<br>
 	<br>
   </div>
