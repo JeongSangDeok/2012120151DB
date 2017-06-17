@@ -13,12 +13,12 @@
    $sql = "insert into User(user_id, user_pw, user_name, user_gender, user_job, user_interest, user_etc, is_admin,is_cookie) ";
    $sql .= "values('$Userid','$Userpw','$Username','$Usergender','$Userjob','$Userinterest','$Useretc', '$Isadmin', 0); ";
    if ($db->query($sql) === true){
-    echo "<H1>RESISTER SUCCESS</H1><br><br>";
-    echo "<a href = "init.php">뒤로 가기(BACK)</a>";
+    echo '<H1>RESISTER SUCCESS</H1><br><br>';
+    echo '<a href="Init.php">To Main Page</a>'; 
    }else{
-    echo "<H1>RESISTER FAIL</H1><br><br>description : <br>";
+    echo '<H1>RESISTER FAIL</H1><br><br>description : <br>';
     echo "error : " . $sql . "<br>". $db->error;
-    echo "<a href = "init.php">뒤로 가기(BACK)</a>";
+   echo '<a href="Init.php">To Main Page</a>'; 
    }
    $db->close();
 ?>
